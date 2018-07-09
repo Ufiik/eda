@@ -1,0 +1,31 @@
+// compileCompressed: /home/guest/eda/css/main.min.css
+
+@import "other/variables"
+@import "other/minimum-reset"
+@import "other/fonts"
+
+@import "components/aside/aside"
+
+@import "components/header/search"
+
+*
+  box-sizing: border-box
+
+.wrapper
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  font-family: $PFr
+  color: $text-color
+
+.container
+  max-width: 1096px
+  margin: 0 auto
+
+.content
+  margin-top: 26px
+  font-family: $PFb
+  width: 87.19%
+  a
+    color: $text-color

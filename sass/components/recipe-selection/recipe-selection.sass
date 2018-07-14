@@ -10,6 +10,7 @@
   display: -ms-flex
   display: flex
   flex-direction: row
+  flex-wrap: wrap
 
 .selection-sort-item
   min-height: 35px
@@ -82,3 +83,81 @@
     width: 100%
     background-color: $gold
     color: #fff
+
+.recipe-grid
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  margin-top: 12px
+  flex-wrap: wrap
+
+.recipe-picture
+  height: auto
+  max-width: 100%
+
+.recipe-grid-item
+  position: relative
+  margin-bottom: 5px
+
+.recipe-big-caption-container
+  z-index: 2
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  min-width: 350px
+  text-align: center
+  h2, h5
+    color: #fff
+    font-weight: 400
+    text-transform: uppercase
+  h5
+    font-size: 16px
+  h2
+    letter-spacing: 1px
+    font-size: 36px
+    font-weight: 700
+    margin-top: 11px
+  &::after
+    content: url("img/icons/icons.svg")
+
+.recipe-small-caption-container
+  top: 13px
+  left: 15px
+  position: absolute
+  padding: 8px 14px
+  background-color: rgba(255,255,255,0.7)
+  h3
+    font-size: 19px
+    font-weight: 400
+    color: #333
+    text-transform: uppercase
+
+.useful
+  span
+    text-transform: uppercase
+
+
+@media (max-width: 1300px)
+  .recipe-grid
+    justify-content: center
+  .recipe-grid-item
+    padding: 5px
+    margin-bottom: 0
+
+@media (max-width: 620px)
+  .recipe-big-caption-container
+    h5
+      font-size: 11px
+    h2
+      font-size: 30px
+
+@media (max-width: 500px)
+  .recipe-big-caption-container
+    min-width: 200px
+
+@media (max-width: 350px)
+  .recipe-big-caption-container
+    h2
+      font-size: 24px

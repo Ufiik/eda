@@ -3,6 +3,7 @@
 @import "other/variables"
 @import "other/minimum-reset"
 @import "other/fonts"
+@import "components/hamburgers/hamburgers"
 
 @import "components/aside/aside"
 
@@ -22,18 +23,19 @@
   color: $text-color
 
 .container
-  max-width: 1096px
+  max-width: 1136px
   margin: 0 auto
+  padding: 0 20px
 
 .content
-  margin-top: 26px
+  margin: 26px auto 0 auto
   font-family: $PFr
   width: 87.19%
   a
     color: $text-color
 
 section
-  h1
+  > h1
     font-family: $PFr
     text-transform: uppercase
     font-weight: 400

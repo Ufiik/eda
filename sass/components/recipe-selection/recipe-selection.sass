@@ -1,0 +1,84 @@
+.recipe-selection-sort
+  margin-top: 18px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+.selection-sort-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+
+.selection-sort-item
+  min-height: 35px
+  width: 156px
+  position: relative
+  border-top: 1px solid #dedede
+  border-right: 1px solid #dedede
+  border-bottom: 1px solid #dedede
+  align-items: center
+  border-left: none
+  &:first-child
+    border-left: 1px solid #dedede
+  &::before
+    position: absolute
+    right: 9px
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    content: "\f107"
+    top: 50%
+    transform: translateY(-50%)
+  select
+    border: none
+    -webkit-appearance: none
+    /* for FF */
+    -moz-appearance: none
+    text-indent: 0.01px
+    text-overflow: ''
+    /* for IE */
+    -ms-appearance: none
+    appearance: none!important
+    cursor: pointer
+    color: $text-color
+    background-color: transparent
+    width: 100%
+    height: 100%
+    font-size: 14px
+    // padding: 14px 18px 11px 18px
+    margin-left: 18px
+    &::-ms-expand
+      display: none
+    option
+      cursor: pointer
+
+.selection-buttons
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+.selections-ing
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  width: 142px
+  margin-right: 11px
+  border: 1px solid #dedede
+  align-items: center
+  justify-content: center
+  span
+    display: inline-block
+
+.selection-button
+  width: 133px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  button
+    height: 100%
+    width: 100%
+    background-color: $gold
+    color: #fff

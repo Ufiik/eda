@@ -1,0 +1,124 @@
+.recipes-tabs
+  display: flex
+  justify-content: center
+  margin-top: 28px
+
+.recipe-tabs-container
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  background-color: #f1f1f1
+  border-radius: 18px
+
+.recipe-tab-link
+  display: inline-block
+  font-size: 16px
+  border-radius: 18px
+  padding: 12px 28px
+  &:hover
+    color: #f1f1f1
+    background-color: $dark
+
+.active-tab
+  color: #f1f1f1!important
+  background-color: $dark
+
+
+
+.recipes-content
+  margin-top: 29px
+
+.recipes-content-item
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  max-height: 268px
+
+.recipe-img-container
+  position: relative
+  display: inline-block
+
+.recipe-author
+  position: absolute
+  bottom: 15px
+  left: 15px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+.recipe-author-pic
+  display: inline-block
+
+.recipe-author-name
+  color: #bcbcbc
+  margin-left: 13px
+
+
+.recipe-text-container
+  padding: 18px 9px
+  max-width: 276px
+  border-top: 2px solid #f3f3f3
+  border-right: 2px solid #f3f3f3
+  border-bottom: 2px solid #f3f3f3
+
+.recipe-text-caption
+  color: $caption-text
+  font-size: 24px
+  font-weight: 400
+  text-align: center
+
+
+.recipe-text-info
+  margin-top: 24px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+.recipe-text-info-container
+  padding: 10px 15px 10px 30px
+  font-size: 14px
+  border: 1px solid #e8e8e8
+  border-radius: 12px
+  color: $gold
+  position: relative
+
+.t
+  &::before
+    position: absolute
+    content: "\f017"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    top: 22%
+    transform: translate(-50%)
+    left: 17px
+    font-size: 17px
+
+.co
+  &::before
+    position: absolute
+    content: "\f19d"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    top: 22%
+    transform: translate(-50%)
+    left: 17px
+    font-size: 17px
+
+.burn
+  &::before
+    position: absolute
+    content: "\f46a"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 900
+    top: 22%
+    transform: translate(-50%)
+    left: 17px
+    font-size: 17px
+
+.recipe-ingridients
+  margin-top: 15px
+  line-height: 16.31px

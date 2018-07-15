@@ -28,6 +28,11 @@
 
 .recipes-content
   margin-top: 29px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
 
 .recipes-content-item
   display: -webkit-flex
@@ -35,6 +40,7 @@
   display: flex
   flex-direction: row
   max-height: 268px
+  margin-bottom: 10px
 
 .recipe-img-container
   position: relative
@@ -57,12 +63,15 @@
   margin-left: 13px
 
 
-.recipe-text-container
-  padding: 18px 9px
+.recipe-text-wrapper
   max-width: 276px
   border-top: 2px solid #f3f3f3
   border-right: 2px solid #f3f3f3
   border-bottom: 2px solid #f3f3f3
+  position: relative
+
+.recipe-text-container
+  padding: 18px 9px
 
 .recipe-text-caption
   color: $caption-text
@@ -91,7 +100,7 @@
     position: absolute
     content: "\f017"
     font-family: "Font Awesome 5 Free"
-    font-weight: 900
+    font-weight: 400
     top: 22%
     transform: translate(-50%)
     left: 17px
@@ -122,3 +131,64 @@
 .recipe-ingridients
   margin-top: 15px
   line-height: 16.31px
+
+.recipe-text-social
+  border-top: 2px solid #f3f3f3
+  height: 45px
+  position: absolute
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  align-items: center
+
+.recipe-text-social-container
+  // padding: 6px 9px 15px 9px
+  width: 100%
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+
+.likes
+  margin-left: 28px
+  position: relative
+  &::before
+    position: absolute
+    content: "\f004"
+    font-family: "Font Awesome 5 Free"
+    font-weight: 400
+    left: -20px
+    color: #ccc
+
+.likes-amount
+  color: #9b9b9b
+  font-size: 15px
+
+.recipe-social-links
+  align-items: center
+  > div
+      display: inline-block
+      margin-right: 18px
+      font-size: 13px
+      i
+        color: #bcbcbc
+
+@media (max-width: 1292px)
+  .recipes-content
+    justify-content: center
+
+@media (max-width: 700px)
+  .recipes-content-item
+    flex-direction: column
+    align-items: center
+    max-height: 100%
+    margin-bottom: 30px
+
+  .recipe-text-wrapper
+    max-width: 100%
+    border-left: 1px solid #f3f3f3
+
+  .recipe-text-social
+    position: static

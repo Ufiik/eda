@@ -9,6 +9,12 @@
   display: flex
   justify-content: space-between
 
+.footer-links
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+
 .footer-link
   text-transform: uppercase
   font-size: 14px
@@ -23,3 +29,22 @@
   margin-right: 15px
   &:last-child
     margin-right: 0
+
+@media (max-width: 715px)
+  .footer
+    flex-direction: column
+    align-items: center
+  .footer-social
+    order: 0
+  .footer-links
+    margin-top: 15px
+    order: 1
+
+@media (max-width: 550px)
+  .footer-links
+    flex-direction: column
+    text-align: center
+
+  .footer-link
+    margin-right: 0
+    margin-top: 10px

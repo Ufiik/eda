@@ -53,6 +53,8 @@ section
     text-align: center
     margin-top: 20px
 
-.container
+@media (max-width: 1000px)
   .branch
-    &:nth-child(2)
+    div
+      &::before, &::after
+        width: 40%
